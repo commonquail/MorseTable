@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.morsetable"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="2.0">
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/be"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/e"
+            android:onClick="setMorseCode"
+            custom:code="." />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bt"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-"
+            android:onClick="setMorseCode"
+            android:text="@string/t" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:weightSum="4.0">
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bi"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".."
+            android:onClick="setMorseCode"
+            android:text="@string/i" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/ba"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".-"
+            android:onClick="setMorseCode"
+            android:text="@string/a" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bn"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-."
+            android:onClick="setMorseCode"
+            android:text="@string/n" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bm"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="--"
+            android:onClick="setMorseCode"
+            android:text="@string/m" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:weightSum="8.0">
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bs"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="..."
+            android:onClick="setMorseCode"
+            android:text="@string/s" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bu"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="..-"
+            android:onClick="setMorseCode"
+            android:text="@string/u" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/br"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".-."
+            android:onClick="setMorseCode"
+            android:text="@string/r" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bw"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".--"
+            android:onClick="setMorseCode"
+            android:text="@string/w" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bd"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-.."
+            android:onClick="setMorseCode"
+            android:text="@string/d" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bk"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-.-"
+            android:onClick="setMorseCode"
+            android:text="@string/k" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bg"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="--."
+            android:onClick="setMorseCode"
+            android:text="@string/g" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bo"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="---"
+            android:onClick="setMorseCode"
+            android:text="@string/o" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3"
+        android:weightSum="16.0" >
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bh"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="...."
+            android:onClick="setMorseCode"
+            android:text="@string/h" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bv"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="...-"
+            android:onClick="setMorseCode"
+            android:text="@string/v" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bf"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="..-."
+            android:onClick="setMorseCode"
+            android:text="@string/f" />
+
+
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/buber"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="..--"
+            android:onClick="setMorseCode"
+            android:text="@string/uumlaut" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bl"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".-.."
+            android:onClick="setMorseCode"
+            android:text="@string/l" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bae"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".-.-"
+            android:onClick="setMorseCode"
+            android:text="@string/ae" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bp"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".--."
+            android:onClick="setMorseCode"
+            android:text="@string/p" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bj"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code=".---"
+            android:onClick="setMorseCode"
+            android:text="@string/j" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bb"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-..."
+            android:onClick="setMorseCode"
+            android:text="@string/b" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bx"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-..-"
+            android:onClick="setMorseCode"
+            android:text="@string/x" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bc"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-.-."
+            android:onClick="setMorseCode"
+            android:text="@string/c" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/by"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="-.--"
+            android:onClick="setMorseCode"
+            android:text="@string/y" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bz"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="--.."
+            android:onClick="setMorseCode"
+            android:text="@string/z" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bq"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="--.-"
+            android:onClick="setMorseCode"
+            android:text="@string/q" />
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/boslash"
+            style="@style/dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="---."
+            android:onClick="setMorseCode"
+            android:text="@string/oslash" />
+
+
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bch"
+            style="@style/dash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:code="----"
+            android:onClick="setMorseCode"
+            android:text="@string/ch" />
+
+    </LinearLayout>
+
+
+<TextView
+    android:id="@+id/string"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/linearLayout4"
+    android:text="@string/app_name"
+    style="@style/code" />
+
+</RelativeLayout>

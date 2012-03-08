@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dot">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="dash" parent="style/dot">
+        <item name="android:background">#999999</item>
+    </style>
+    
+    <style name="code">
+    </style>
+</resources>
