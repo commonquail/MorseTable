@@ -14,3 +14,5 @@ Assuming I ever get around to any of it.
 
 This being the result of having too much time one afternoon and deciding to try my hands at Android development, this is not meant to be a "serious" project. It is what it is and it may or may never progress. That said, it is not intended for mastering Morse code; there are numerous apps that do this
 better. Nor will it be a full-fledged translator; there are numerous apps that do that better, too.
+
+[wiki]: http://en.wikipedia.org/wiki/Morse_code#Alternative_display_of_more_common_characters_in_International_Morse_code
