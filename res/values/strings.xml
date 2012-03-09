@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MorseTable</string>
-    <string name="dot">.</string>
-    <string name="dash">-</string>
+    <string name="app_name" style="@style/code">MorseTable</string>
+    <string name="dit" style="@style/dit">·</string>
+    <string name="dah" style="@style/dah">–</string>
     <string name="a">A</string>
     <string name="b">B</string>
     <string name="c">C</string>

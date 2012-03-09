@@ -3,6 +3,7 @@
     
 	<declare-styleable name="MorseKey">
 		<attr name="code" format="string"/>
+		<attr name="parentKey" format="reference"/>
 	</declare-styleable>
 
 </resources>
