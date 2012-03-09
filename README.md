@@ -3,12 +3,10 @@
 This is an Android 2.1 app intended for learning basic Morse code, using a graphical table representation as seen on [the Wikipedia Morse code article][wiki]. All it does now is translate the pressed letter to Morse code; not even worthy of a *Features* section.
 
 ## Planned features
-* A prettier `dit` character, maybe also `dah`.
 * UI refinements, including borders and letter cell highlighting.
 * Simple Morse input for reverse translation.
-* Better handling of Morse code (hardcoding is a pain but probably yields better performance).
 
-Assuming I ever get around to any of it.
+Assuming I ever get around to it.
 
 ## Project statement
 
