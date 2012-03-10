@@ -2,8 +2,8 @@
 <resources>
 
     <string name="app_name" style="@style/code">MorseTable</string>
-    <string name="dit" style="@style/dit">·</string>
-    <string name="dah" style="@style/dah">–</string>
+    <string name="dit">·</string>
+    <string name="dah">–</string>
     <string name="a">A</string>
     <string name="b">B</string>
     <string name="c">C</string>
