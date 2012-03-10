@@ -18,16 +18,12 @@
             android:id="@+id/be"
             style="@style/dit"
             android:text="@string/e"
-            custom:parentKey="@+id/be"
-            android:onClick="setMorseCode"
-            custom:code="@string/dit" />
+            custom:parentKey="@+id/be"/>
 
         <com.morsetable.MorseKey
             android:id="@+id/bt"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bt"
-            android:onClick="setMorseCode"
             android:text="@string/t" />
 
     </LinearLayout>
@@ -43,33 +39,25 @@
         <com.morsetable.MorseKey
             android:id="@+id/bi"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/be"
-            android:onClick="setMorseCode"
             android:text="@string/i" />
 
         <com.morsetable.MorseKey
             android:id="@+id/ba"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/be"
-            android:onClick="setMorseCode"
             android:text="@string/a" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bn"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bt"
-            android:onClick="setMorseCode"
             android:text="@string/n" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bm"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bt"
-            android:onClick="setMorseCode"
             android:text="@string/m" />
 
     </LinearLayout>
@@ -85,65 +73,49 @@
         <com.morsetable.MorseKey
             android:id="@+id/bs"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bi"
-            android:onClick="setMorseCode"
             android:text="@string/s" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bu"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bi"
-            android:onClick="setMorseCode"
             android:text="@string/u" />
 
         <com.morsetable.MorseKey
             android:id="@+id/br"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/ba"
-            android:onClick="setMorseCode"
             android:text="@string/r" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bw"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/ba"
-            android:onClick="setMorseCode"
             android:text="@string/w" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bd"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bn"
-            android:onClick="setMorseCode"
             android:text="@string/d" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bk"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bn"
-            android:onClick="setMorseCode"
             android:text="@string/k" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bg"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bm"
-            android:onClick="setMorseCode"
             android:text="@string/g" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bo"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bm"
-            android:onClick="setMorseCode"
             android:text="@string/o" />
 
     </LinearLayout>
@@ -160,129 +132,97 @@
         <com.morsetable.MorseKey
             android:id="@+id/bh"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bs"
-            android:onClick="setMorseCode"
             android:text="@string/h" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bv"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bs"
-            android:onClick="setMorseCode"
             android:text="@string/v" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bf"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bu"
-            android:onClick="setMorseCode"
             android:text="@string/f" />
 
         <com.morsetable.MorseKey
             android:id="@+id/buber"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bu"
-            android:onClick="setMorseCode"
             android:text="@string/uumlaut" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bl"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/br"
-            android:onClick="setMorseCode"
             android:text="@string/l" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bae"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/br"
-            android:onClick="setMorseCode"
             android:text="@string/ae" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bp"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bw"
-            android:onClick="setMorseCode"
             android:text="@string/p" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bj"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bw"
-            android:onClick="setMorseCode"
             android:text="@string/j" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bb"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bd"
-            android:onClick="setMorseCode"
             android:text="@string/b" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bx"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bd"
-            android:onClick="setMorseCode"
             android:text="@string/x" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bc"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bk"
-            android:onClick="setMorseCode"
             android:text="@string/c" />
 
         <com.morsetable.MorseKey
             android:id="@+id/by"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bk"
-            android:onClick="setMorseCode"
             android:text="@string/y" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bz"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@+id/bg"
-            android:onClick="setMorseCode"
             android:text="@string/z" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bq"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@+id/bg"
-            android:onClick="setMorseCode"
             android:text="@string/q" />
 
         <com.morsetable.MorseKey
             android:id="@+id/boslash"
             style="@style/dit"
-            custom:code="@string/dit"
             custom:parentKey="@id/bo"
-            android:onClick="setMorseCode"
             android:text="@string/oslash" />
 
         <com.morsetable.MorseKey
             android:id="@+id/bch"
             style="@style/dah"
-            custom:code="@string/dah"
             custom:parentKey="@id/bo"
-            android:onClick="setMorseCode"
             android:text="@string/ch" />
 
     </LinearLayout>
