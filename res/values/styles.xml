@@ -10,16 +10,18 @@
         <item name="android:onClick">setMorseCode</item>
         <item name="code">@string/dit</item>
         <item name="parentState">@drawable/dit_key_pressed_parent</item>
-    </style>
+        <item name="pressedState">@drawable/dit_key_pressed</item>
+        </style>
 
     <style name="dah" parent="style/dit">
         <item name="android:background">@drawable/dah_key_selector</item>
         <item name="code">@string/dah</item>
         <item name="parentState">@drawable/dah_key_pressed_parent</item>
-        </style>
+        <item name="pressedState">@drawable/dah_key_pressed</item>
+    </style>
     
     <style name="code">
-        <item name="android:textColor">#EEEEEE</item>
+        <item name="android:textColor">@color/code</item>
         <item name="android:textSize">30dp</item>
     </style>
 </resources>

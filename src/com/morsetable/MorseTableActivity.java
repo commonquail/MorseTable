@@ -3,7 +3,6 @@ package com.morsetable;
 import java.util.ArrayList;
 
 import android.app.Activity;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -45,13 +44,14 @@ public class MorseTableActivity extends Activity {
 			m0 = m0.parent();
 		} while (m1 != m0);
 		
-		for (MorseKey m : activeKeys) {
-			m.colorParent();
-//			m.setBackgroundResource(R.drawable.dit_key_pressed_parent);
+		activeKeys.get(0).colorPressed();
+		for (int i = 1; i < activeKeys.size(); i++) {
+			activeKeys.get(i).colorParent();
 		}
     }
 	
 	private ArrayList<MorseKey> allKeys;
+	
 	private ArrayList<MorseKey> activeKeys;
 	
 	private TextView code;

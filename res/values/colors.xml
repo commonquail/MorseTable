@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dit_fill">#FFFFFF</color>
+    <color name="dah_fill">#999999</color>
+    
+    <color name="border_default">#333642</color>
+    <color name="border_pressed">#1AF702</color>
+    <color name="border_pressed_parent">#FFF34C</color>
+    
+    <color name="code">#EEEEEE</color>
+</resources>

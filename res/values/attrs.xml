@@ -4,7 +4,8 @@
 	<declare-styleable name="MorseKey">
 		<attr name="code" format="string"/>
 		<attr name="parentKey" format="reference"/>
-		<attr name="parentState" format="reference"/>
-	</declare-styleable>
+        <attr name="parentState" format="reference"/>
+        <attr name="pressedState" format="reference"/>
+   	</declare-styleable>
 
 </resources>

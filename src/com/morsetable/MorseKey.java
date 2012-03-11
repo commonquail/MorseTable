@@ -34,6 +34,9 @@ public class MorseKey extends Button {
             case R.styleable.MorseKey_parentState:
             	parentState = a.getResourceId(attr, -1);
             	break;
+            case R.styleable.MorseKey_pressedState:
+            	pressedState = a.getResourceId(attr, -1);
+            	break;
             }
         }
         a.recycle();
@@ -52,6 +55,9 @@ public class MorseKey extends Button {
         return parent.code() + code;
     }
     
+    public void colorPressed() {
+    	this.setBackgroundResource(pressedState);
+    }
     public void colorParent() {
     	this.setBackgroundResource(parentState);
     }
@@ -65,6 +71,8 @@ public class MorseKey extends Button {
     {
     	this.setBackgroundDrawable(background);
     }
+    
+    private int pressedState;
     
     private int parentState;
     
