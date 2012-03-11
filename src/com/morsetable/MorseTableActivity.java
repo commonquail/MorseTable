@@ -19,6 +19,7 @@ public class MorseTableActivity extends Activity {
         allKeys = new ArrayList<MorseKey>(40);
         activeKeys = new ArrayList<MorseKey>(5);
         
+        /*
         // Find all the MorseKey objects and store them in allKeys. We know how
         // many LinearLayouts there are so we can hardcode the limit.
         RelativeLayout rl = ((RelativeLayout)findViewById(R.id.relativeLayout1)); 
@@ -29,6 +30,7 @@ public class MorseTableActivity extends Activity {
                 allKeys.add((MorseKey)ll.getChildAt(j));
             }
         }
+        */
     }
     
     /**
@@ -51,8 +53,9 @@ public class MorseTableActivity extends Activity {
             m0 = m0.parent();
         } while (m1 != m0);
         
+        // Reversed, reduced iteration saves a little bit.
         activeKeys.get(0).setState(MorseKey.State.PRESSED);
-        for (int i = 1; i < activeKeys.size(); i++) {
+        for (int i = activeKeys.size() - 1; i >= 1; i--) {
             activeKeys.get(i).setState(MorseKey.State.PARENT);
         }
     }

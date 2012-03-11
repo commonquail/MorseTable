@@ -65,14 +65,14 @@ public class MorseKey extends Button {
      * prepended to the <code>code</code> of that key's parent. 
      * @return the canonical Morse code for this key.
      */
-    public String code() {
+    public StringBuilder code() {
         if (parent == null) {
         	parent = (MorseKey)((RelativeLayout)this.getParent().getParent()).findViewById(parentKeyID);
         }
         if (parent == this) {
-        	return code;
+        	return new StringBuilder(code);
         }
-        return parent.code() + code;
+        return parent.code().append(code);
     }
     
     /**
