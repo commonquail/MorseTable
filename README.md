@@ -3,10 +3,9 @@
 This is an Android 2.1 app intended for learning basic Morse code, using a graphical table representation as seen on [the Wikipedia Morse code article][wiki]. All it does now is translate the pressed letter to Morse code; not even worthy of a *Features* section.
 
 ## Planned features
-* UI refinements, including borders and letter cell highlighting.
 * Simple Morse input for reverse translation.
 
-Assuming I ever get around to it.
+If I ever get around to it.
 
 ## Project statement
 
