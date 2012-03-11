@@ -9,33 +9,48 @@ import android.widget.RelativeLayout;
 
 public class MorseKey extends Button {
 
+	/**
+	 * Possible states for a MorseKey.
+	 * - DEFAULT: the default state.
+	 * - PARENT: this key is a parent of a pressed or parent key.
+	 * - PRESSED: this key was pressed. 
+	 * @author Mikkel Kjeldsen
+	 */
+	public static enum State {DEFAULT, PARENT, PRESSED}
+	
     public MorseKey(Context context, AttributeSet attrs) {
         super(context, attrs);
         initMorseKey(attrs);
     }
     
+    /**
+     * Initialises custom attributes.
+     * @param attrs the set of attributes passed to the constructor.
+     */
     private void initMorseKey(AttributeSet attrs) {
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.MorseKey);
         final int N = a.getIndexCount();
-        for (int i = 0; i < N; i++)
-        {
+        for (int i = 0; i < N; i++) {
             int attr = a.getIndex(i);
             switch (attr)
             {
             case R.styleable.MorseKey_code:
                 code = a.getString(attr);
                 break;
+                
             case R.styleable.MorseKey_parentKey:
             	// Calling this.getParent() here is too soon; the view 
             	// hierarchy hasn't been created yet. Make it a lazy
             	// assignment instead.
-            	parentKey = a.getResourceId(attr, -1);
+            	parentKeyID = a.getResourceId(attr, -1);
                 break;
+                
             case R.styleable.MorseKey_parentState:
-            	parentState = a.getResourceId(attr, -1);
+            	parentStateBackground = a.getResourceId(attr, -1);
             	break;
+            	
             case R.styleable.MorseKey_pressedState:
-            	pressedState = a.getResourceId(attr, -1);
+            	pressedStateBackground = a.getResourceId(attr, -1);
             	break;
             }
         }
@@ -44,10 +59,15 @@ public class MorseKey extends Button {
         background = this.getBackground();
     }
 
-    public String code()
-    {
+    /**
+     * Returns the canonical Morse code for this Morse key.
+     * The canonical Morse code of a given key is the <code>code</code> of that key
+     * prepended to the <code>code</code> of that key's parent. 
+     * @return the canonical Morse code for this key.
+     */
+    public String code() {
         if (parent == null) {
-        	parent = (MorseKey)((RelativeLayout)this.getParent().getParent()).findViewById(parentKey);
+        	parent = (MorseKey)((RelativeLayout)this.getParent().getParent()).findViewById(parentKeyID);
         }
         if (parent == this) {
         	return code;
@@ -55,32 +75,57 @@ public class MorseKey extends Button {
         return parent.code() + code;
     }
     
-    public void colorPressed() {
-    	this.setBackgroundResource(pressedState);
-    }
-    public void colorParent() {
-    	this.setBackgroundResource(parentState);
+    /**
+     * Changes the state of this MorseKey.
+     * @param s the new state.
+     */
+    public void setState(State s) {
+    	switch (s)
+    	{
+    	case DEFAULT:
+        	this.setBackgroundDrawable(background);
+        	break;
+        	
+    	case PRESSED:
+        	this.setBackgroundResource(pressedStateBackground);
+        	break;
+        	
+    	case PARENT:
+        	this.setBackgroundResource(parentStateBackground);
+        	break;
+    	}
     }
     
-    public MorseKey parent()
-    {
+    /**
+     * @return this Morse key's parent key.
+     */
+    public MorseKey parent() {
     	return parent;
     }
     
-    public void reset()
-    {
-    	this.setBackgroundDrawable(background);
-    }
+    /**
+     * A reference to the background ID to use for the key that was pressed.
+     */
+    private int pressedStateBackground;
     
-    private int pressedState;
-    
-    private int parentState;
+    /**
+     * A reference to the background ID to use for all parent keys of the key
+     * that was pressed.
+     */
+    private int parentStateBackground;
     
     private Drawable background;
     
-    private int parentKey;
+    /**
+     * We have to store the ID, then find the object later, since the hierarchy
+     * isn't finalised when the constructor finishes.
+     */
+    private int parentKeyID;
     
     private MorseKey parent;
     
+    /**
+     * A single dit or dah character.
+     */
     private String code;
 }
