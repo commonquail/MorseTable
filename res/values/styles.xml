@@ -9,12 +9,14 @@
         <item name="android:layout_weight">1</item>
         <item name="android:onClick">setMorseCode</item>
         <item name="code">@string/dit</item>
+        <item name="parentState">@drawable/dit_key_pressed_parent</item>
     </style>
 
     <style name="dah" parent="style/dit">
         <item name="android:background">@drawable/dah_key_selector</item>
         <item name="code">@string/dah</item>
-    </style>
+        <item name="parentState">@drawable/dah_key_pressed_parent</item>
+        </style>
     
     <style name="code">
         <item name="android:textColor">#EEEEEE</item>

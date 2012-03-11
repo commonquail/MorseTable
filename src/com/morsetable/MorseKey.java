@@ -2,6 +2,7 @@ package com.morsetable;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -30,9 +31,14 @@ public class MorseKey extends Button {
             	// assignment instead.
             	parentKey = a.getResourceId(attr, -1);
                 break;
+            case R.styleable.MorseKey_parentState:
+            	parentState = a.getResourceId(attr, -1);
+            	break;
             }
         }
         a.recycle();
+        
+        background = this.getBackground();
     }
 
     public String code()
@@ -45,6 +51,24 @@ public class MorseKey extends Button {
         }
         return parent.code() + code;
     }
+    
+    public void colorParent() {
+    	this.setBackgroundResource(parentState);
+    }
+    
+    public MorseKey parent()
+    {
+    	return parent;
+    }
+    
+    public void reset()
+    {
+    	this.setBackgroundDrawable(background);
+    }
+    
+    private int parentState;
+    
+    private Drawable background;
     
     private int parentKey;
     
