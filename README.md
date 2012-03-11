@@ -4,6 +4,7 @@ This is an Android 2.1 app intended for learning basic Morse code, using a graph
 
 ## Planned features
 * Simple Morse input for reverse translation.
+* Icons.
 
 If I ever get around to it.
 

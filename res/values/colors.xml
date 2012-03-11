@@ -4,8 +4,9 @@
     <color name="dah_fill">#999999</color>
     
     <color name="border_default">#333642</color>
-    <color name="border_pressed">#1AF702</color>
-    <color name="border_pressed_parent">#FFF34C</color>
+    <color name="border_focused">#33B5E5</color>
+    <color name="border_pressed">#99CC00</color>
+    <color name="border_pressed_parent">#FFBB33</color>
     
     <color name="code">#EEEEEE</color>
 </resources>
