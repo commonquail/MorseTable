@@ -4,4 +4,8 @@
     <string name="app_name" style="@style/code">Morsetabel</string>
     <string name="description">Denne applikation tager en logisk tilgang til indlæring af grundlæggende Morsekode ved, at præsentere alfabetet i et grafisk træ.</string>
     
+    <string name="ae">Æ</string>
+    <string name="oslash">Ø</string>
+    <string name="agrave">Å</string>
+
 </resources>

@@ -32,10 +32,21 @@
     <string name="x">X</string>
     <string name="y">Y</string>
     <string name="z">Z</string>
-    <string name="ae">Æ</string>
-    <string name="oslash">Ø</string>
-    <string name="aring">Å</string>
+    <string name="ae">Ä</string>
+    <string name="oslash">Ö</string>
+    <string name="agrave">À</string>
     <string name="uumlaut">Ü</string>
     <string name="ch">CH</string>
+    
+    <string name="_0">0</string> 
+    <string name="_1">1</string> 
+    <string name="_2">2</string> 
+    <string name="_3">3</string> 
+    <string name="_4">4</string> 
+    <string name="_5">5</string> 
+    <string name="_6">6</string> 
+    <string name="_7">7</string> 
+    <string name="_8">8</string> 
+    <string name="_9">9</string> 
     
 </resources>
