@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" style="@style/code">Morsetabel</string>
+    <string name="description">Denne applikation tager en logisk tilgang til indlæring af grundlæggende Morsekode ved, at præsentere alfabetet i et grafisk træ.</string>
+    
+</resources>

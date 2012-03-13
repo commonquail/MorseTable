@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name" style="@style/code">MorseTable</string>
+    <string name="description">This application is intended to teach basic Morse code using a logical tree-based, graphical presentation of the alphabet.</string>
+    
     <string name="dit">·</string>
     <string name="dah">–</string>
     <string name="a">A</string>
