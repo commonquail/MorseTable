@@ -1,6 +1,6 @@
 # MorseTable (Android)
 
-This is an Android 2.1 app intended for learning basic Morse code, using a graphical table representation as seen on [the Wikipedia Morse code article][wiki]. All it does now is translate the pressed letter to Morse code; not even worthy of a *Features* section.
+This is an Android 2.1 app intended for learning basic Morse code, using a graphical tree representation as seen on [the Wikipedia Morse code article][wiki]. All it does now is translate the pressed letter to Morse code; not even worthy of a *Features* section.
 
 ## Planned features
 * Simple Morse input for reverse translation.
