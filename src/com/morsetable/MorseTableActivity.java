@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MorseTableActivity extends Activity {
@@ -16,15 +14,17 @@ public class MorseTableActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         code = (TextView)findViewById(R.id.string);
-        allKeys = new ArrayList<MorseKey>(40);
+//        allKeys = new ArrayList<MorseKey>(65);
         activeKeys = new ArrayList<MorseKey>(5);
         
         /*
         // Find all the MorseKey objects and store them in allKeys. We know how
         // many LinearLayouts there are so we can hardcode the limit.
+         * We don't know anymore.
         RelativeLayout rl = ((RelativeLayout)findViewById(R.id.relativeLayout1)); 
         LinearLayout ll;
-        for (int i = 0; i < 4; i++) {
+        int len = rl.getChildCount() - 1;
+        for (int i = 0; i < 5; i++) {
             ll = (LinearLayout)rl.getChildAt(i);
             for (int j = 0; j < ll.getChildCount(); j++) {
                 allKeys.add((MorseKey)ll.getChildAt(j));
@@ -60,7 +60,7 @@ public class MorseTableActivity extends Activity {
         }
     }
     
-    private ArrayList<MorseKey> allKeys;
+//    private ArrayList<MorseKey> allKeys;
     
     /**
      * Contains the most recent pressed key and all its ancestors for easier
