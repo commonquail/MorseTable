@@ -148,7 +148,7 @@
             android:text="@string/f" />
 
         <com.morsetable.MorseKey
-            android:id="@+id/buber"
+            android:id="@+id/buumlaut"
             style="@style/dah"
             custom:parentKey="@+id/bu"
             android:text="@string/uumlaut" />
@@ -227,13 +227,182 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout4"
+        android:weightSum="32.0" >
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b5"
+            style="@style/dit"
+            custom:parentKey="@+id/bh"
+            android:text="@string/_5" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b4"
+            style="@style/dah"
+            custom:parentKey="@+id/bh"
+            android:text="@string/_4" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bf1"
+            style="@style/spacer"
+            custom:parentKey="@+id/bv" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b3"
+            style="@style/dah"
+            custom:parentKey="@+id/bv"
+            android:text="@string/_3" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bl1"
+            style="@style/spacer"
+            custom:parentKey="@+id/bf" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bae1"
+            style="@style/spacer" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bp1"
+            style="@style/spacer"
+            custom:parentKey="@+id/buumlaut" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b2"
+            style="@style/dah"
+            custom:parentKey="@+id/buumlaut"
+            android:text="@string/_2" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bb1"
+            style="@style/spacer" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bx1"
+            style="@style/spacer"
+            custom:parentKey="@+id/bl" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bc1"
+            style="@style/spacer"
+            custom:parentKey="@+id/bae" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/by1"
+            style="@style/spacer" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bz1"
+            style="@style/spacer"
+            custom:parentKey="@+id/bp" />
+        <com.morsetable.MorseKey
+            android:id="@+id/bagrave"
+            style="@style/dah"
+            custom:parentKey="@+id/bp"
+            android:text="@string/agrave" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/boslash1"
+            style="@style/spacer"
+            custom:parentKey="@id/bj" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b1"
+            style="@style/dah"
+            custom:parentKey="@id/bj"
+            android:text="@string/_1" />
+        <com.morsetable.MorseKey
+            android:id="@+id/b6"
+            style="@style/dit"
+            custom:parentKey="@+id/bb"
+            android:text="@string/_6" />
+        <com.morsetable.MorseKey
+            android:id="@+id/bv2"
+            style="@style/spacer"
+            custom:parentKey="@+id/bb" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bf2"
+            style="@style/spacer"
+            custom:parentKey="@+id/bx" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/buber2"
+            style="@style/spacer" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bl2"
+            style="@style/spacer"
+            custom:parentKey="@+id/bc" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bae2"
+            style="@style/spacer" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bp2"
+            style="@style/spacer"
+            custom:parentKey="@+id/by" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bj2"
+            style="@style/spacer" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b7"
+            style="@style/dit"
+            custom:parentKey="@+id/bz"
+            android:text="@string/_7" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bx2"
+            style="@style/spacer" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bc2"
+            style="@style/spacer"
+            custom:parentKey="@+id/bq" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/by2"
+            style="@style/spacer"
+            custom:parentKey="@+id/bq" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b8"
+            style="@style/dit"
+            custom:parentKey="@+id/boslash"
+            android:text="@string/_8" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/bq2"
+            style="@style/spacer"/>
+        <com.morsetable.MorseKey
+            android:id="@+id/b9"
+            style="@style/dit"
+            custom:parentKey="@id/bch"
+            android:text="@string/_9" />
+
+        <com.morsetable.MorseKey
+            android:id="@+id/b0"
+            style="@style/dah"
+            custom:parentKey="@id/bch"
+            android:text="@string/_0" />
+        
+    </LinearLayout>
+    
 <TextView
     android:id="@+id/string"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
     android:layout_alignParentLeft="true"
-    android:layout_below="@+id/linearLayout4"
+    android:layout_below="@+id/linearLayout5"
     android:text="@string/app_name"
     style="@style/code" />
 

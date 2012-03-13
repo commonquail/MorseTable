@@ -20,6 +20,11 @@
         <item name="pressedState">@drawable/dah_key_pressed</item>
     </style>
     
+    <style name="spacer" parent="style/dit">
+        <item name="android:enabled">false</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+    
     <style name="code">
         <item name="android:textColor">@color/code</item>
         <item name="android:textSize">30dp</item>
