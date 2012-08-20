@@ -4,11 +4,17 @@
     android:versionCode="2"
     android:versionName="1.1" >
 
-    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="7" />
 
     <application
+        android:description="@string/description"
+        android:enabled="true"
+        android:hasCode="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" android:persistent="false" android:enabled="true" android:debuggable="false" android:hasCode="true" android:description="@string/description">
+        android:label="@string/app_name"
+        android:persistent="false" >
         <activity
             android:name=".MorseTableActivity"
             android:label="@string/app_name" >
